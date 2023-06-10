@@ -545,16 +545,42 @@ span {
 
   .tab {
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 
   .tab-button {
+    width: 100%;
     margin-bottom: 1rem;
+  }
+
+  .tools-logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tools-logo i {
+    margin: 1rem;
   }
 }
 
 @media (max-width: 617px) {
   .portfolio-container {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .tab-content p,
+  .tools-logo {
+    font-size: 1.4rem;
+  }
+
+  .tools-logo i {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2.4rem;
   }
 }
 

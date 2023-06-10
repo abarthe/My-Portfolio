@@ -52,8 +52,10 @@ ScrollReveal().reveal(
   ".home-img, .services-container, .portfolio-box, .contact form",
   { origin: "bottom" }
 );
-ScrollReveal().reveal(".home-content h1, .about-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .about-content", { origin: "right" });
+ScrollReveal().reveal(".home-content h1, .skills-img", { origin: "left" });
+ScrollReveal().reveal(".home-content p, .skills-content, .tab-content", {
+  origin: "right",
+});
 
 /*======= typed js =======*/
 const typed = new Typed(".multiple-text", {
@@ -64,6 +66,7 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
+/*======= Tab function in skills section =======*/
 function changeTab(event, tabName) {
   // Hide all tab content
   const tabContent = document.getElementsByClassName("tab-content");

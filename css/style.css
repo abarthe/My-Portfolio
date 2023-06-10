@@ -192,25 +192,31 @@ span {
 
 .tab {
   display: flex;
-  margin: 1rem 0 1rem 0;
+  margin: 2rem 0;
 }
 
 .tab-button {
+  display: inline-block;
   font-size: 2.6rem;
   background: var(--second-bg-color);
   border: none;
-  padding: 10px 20px;
+  padding: 1rem 2.8rem;
   cursor: pointer;
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
+  border-radius: 2rem;
+  margin: 0 0.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
 }
 
 .tab-button:hover {
-  background: var(--main-color);
+  background: var(--bg-color);
 }
 
 .tab-button.active {
-  background: var(--bg-color);
+  background: var(--main-color);
+  color: var(--second-bg-color);
+  box-shadow: 0 0 1rem var(--main-color);
 }
 
 .tab-content {
@@ -250,7 +256,7 @@ span {
 .services-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 2rem;
 }
@@ -263,6 +269,9 @@ span {
   text-align: center;
   border: 0.2rem solid var(--bg-color);
   transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .services-container .services-box:hover {
@@ -277,11 +286,13 @@ span {
 
 .services-box h3 {
   font-size: 2.6rem;
+  margin-top: 0;
 }
 
 .services-box p {
   font-size: 1.6rem;
-  margin: 1rem 0 3rem;
+  margin: 1.6rem 0;
+  flex-grow: 1;
 }
 
 .portfolio {

@@ -25,7 +25,7 @@
 
       <nav class="navbar">
         <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#services">Services</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#contact">Contact</a>
@@ -67,23 +67,46 @@
     </section>
 
     <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about.png" alt="" />
+    <section class="skills" id="skills">
+      <div class="skills-img">
+        <img src="images/skills.png" alt="" />
       </div>
 
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Web Developer</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          eos, magnam, eum voluptatum mollitia eligendi nam veritatis numquam
-          nulla eius voluptatibus, cum neque minima debitis recusandae
-          distinctio doloremque porro ipsam? Reiciendis earum unde, omnis at
-          asperiores illo et? Ipsa porro nihil eligendi obcaecati perferendis
-          minus nostrum.
-        </p>
-        <a href="#" class="btn">Read More</a>
+      <div class="skills-content">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="tab-container">
+          <div class="tab">
+            <button
+              class="tab-button active"
+              onclick="changeTab(event, 'webdev')"
+            >
+              Web Developement
+            </button>
+            <button class="tab-button" onclick="changeTab(event, 'digital')">
+              Digital Marketing
+            </button>
+          </div>
+          <div id="webdev" class="tab-content active">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              eos, magnam, eum voluptatum mollitia eligendi nam veritatis
+              numquam nulla eius voluptatibus, cum neque minima debitis
+              recusandae distinctio doloremque porro ipsam? Reiciendis earum
+              unde, omnis at asperiores illo et? Ipsa porro nihil eligendi
+              obcaecati perferendis minus nostrum.
+            </p>
+          </div>
+          <div id="digital" class="tab-content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+              eos, magnam, eum voluptatum mollitia eligendi nam veritatis
+              numquam nulla eius voluptatibus, cum neque minima debitis
+              recusandae distinctio doloremque porro ipsam? Reiciendis earum
+              unde, omnis at asperiores illo et? Ipsa porro nihil eligendi
+              obcaecati perferendis minus nostrum.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 

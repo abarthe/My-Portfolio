@@ -63,3 +63,23 @@ const typed = new Typed(".multiple-text", {
   backDelay: 1000,
   loop: true,
 });
+
+function changeTab(event, tabName) {
+  // Hide all tab content
+  const tabContent = document.getElementsByClassName("tab-content");
+  for (let i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+
+  // Remove "active" class from all tab buttons
+  const tabButtons = document.getElementsByClassName("tab-button");
+  for (let i = 0; i < tabButtons.length; i++) {
+    tabButtons[i].classList.remove("active");
+  }
+
+  // Show the selected tab content
+  document.getElementById(tabName).style.display = "block";
+
+  // Add "active" class to the clicked tab button
+  event.currentTarget.classList.add("active");
+}

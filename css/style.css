@@ -342,6 +342,7 @@ span {
   padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
+  color: var(--bg-color);
 }
 
 .portfolio-box:hover .portfolio-layer {
@@ -363,13 +364,13 @@ span {
   align-items: center;
   width: 5rem;
   height: 5rem;
-  background: var(--text-color);
+  background: var(--second-bg-color);
   border-radius: 50%;
 }
 
 .portfolio-layer a i {
   font-size: 2rem;
-  color: var(--second-bg-color);
+  color: var(--text-color);
 }
 
 .contact h2 {

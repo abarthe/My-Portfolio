@@ -53,7 +53,7 @@ ScrollReveal().reveal(
   { origin: "bottom" }
 );
 ScrollReveal().reveal(".home-content h1, .skills-img", { origin: "left" });
-ScrollReveal().reveal(".home-content p, .skills-content, .tab-content", {
+ScrollReveal().reveal(".home-content p, .skills-content, .tab", {
   origin: "right",
 });
 

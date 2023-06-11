@@ -462,10 +462,7 @@ span {
     padding: 10rem 3% 2rem;
   }
 
-  .services {
-    padding-bottom: 7rem;
-  }
-
+  .services,
   .portfolio {
     padding-bottom: 7rem;
   }
@@ -518,7 +515,8 @@ span {
     font-size: 5rem;
   }
 
-  .home-img img {
+  .home-img img,
+  .skills img {
     width: 70vw;
     margin-top: 4rem;
   }
@@ -527,15 +525,7 @@ span {
     flex-direction: column-reverse;
   }
 
-  .skills img {
-    width: 70vw;
-    margin-top: 4rem;
-  }
-
-  .services h2 {
-    margin-bottom: 3rem;
-  }
-
+  .services h2,
   .portfolio h2 {
     margin-bottom: 3rem;
   }
@@ -605,10 +595,7 @@ span {
     width: 100%;
   }
 
-  .home-img img {
-    width: 90vw;
-  }
-
+  .home-img img,
   .skills-img img {
     width: 90vw;
   }

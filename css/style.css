@@ -323,9 +323,10 @@ span {
   transition: 0.5s ease;
 }
 
-/* .portfolio-box:hover img {
-  transform: scale(1.1);
-} */
+.portfolio-box:hover img {
+  /* transform: scale(1.1); */
+  filter: blur(5px);
+}
 
 .portfolio-box .portfolio-layer {
   position: absolute;
@@ -342,7 +343,7 @@ span {
   padding: 0 4rem;
   transform: translateY(100%);
   transition: 0.5s ease;
-  color: var(--bg-color);
+  color: var(--second-bg-color);
 }
 
 .portfolio-box:hover .portfolio-layer {

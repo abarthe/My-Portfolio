@@ -86,5 +86,3 @@ function changeTab(event, tabName) {
   // Add "active" class to the clicked tab button
   event.currentTarget.classList.add("active");
 }
-
-// Testing Something
